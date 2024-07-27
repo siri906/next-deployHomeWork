@@ -12,7 +12,7 @@ export default async function CategoryList() {
       <ul className="cateList">
         {bookCategoryList.results.map((categoryItem: BookCategoryListDetail, idx: number) => (
           <li key={idx} className="my-2">
-            <Link className="bg-emerald-500 rounded-3xl py-2 px-4 text-sm mr-2 inline-block text-white hover:bg-emerald-700 hover:scale-90 transition-transform" href={`/list/${categoryItem.list_name_encoded}`}>
+            <Link prefetch={true} className="bg-emerald-500 rounded-3xl py-2 px-4 text-sm mr-2 inline-block text-white hover:bg-emerald-700 hover:scale-90 transition-transform" href={`/list/${categoryItem.list_name_encoded}`}>
               {categoryItem.display_name}
             </Link>
           </li>
