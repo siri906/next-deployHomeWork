@@ -1,0 +1,17 @@
+.nav {
+  font-weight: 500;
+  margin-bottom: 3.5rem;
+  .menu_list {
+    display: flex;
+    padding: 0 2.5rem;
+    background-color: #94a3b8;
+    height: 4rem;
+    justify-content: space-between;
+    align-items: center;
+    li {
+      a:hover {
+        color: #bef264;
+      }
+    }
+  }
+}
